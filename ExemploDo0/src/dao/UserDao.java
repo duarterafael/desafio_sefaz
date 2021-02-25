@@ -10,10 +10,6 @@ import utils.HibernateUtil;
 
 public class UserDao {
 
-    /**
-     * Save User
-     * @param user
-     */
     public void saveUser(User user) {
         Transaction transaction = null;
         try (Session session = HibernateUtil.getSessionFactory().openSession()) {
